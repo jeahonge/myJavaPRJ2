@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원피스 상세 정보</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .detail-container {
+      display: flex;
+      gap: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1.5rem;
+      background: #f9f9f9;
+    }
+
+    .detail-img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .detail-content {
+      flex: 1;
+    }
+
+    .detail-content h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #1a237e;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0d47a1;
+    }
+
+    .genre-buttons, .tag-buttons {
+      margin: 1rem 0;
+    }
+
+    .genre-buttons button,
+    .tag-buttons button {
+      background-color: #e3f2fd;
+      border: none;
+      color: #0d47a1;
+      padding: 5px 10px;
+      margin: 3px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      cursor: default;
+    }
+
+    .tag-buttons button {
+      background-color: #ffebee;
+      color: #c62828;
+    }
+
+    .more-button {
+      margin-top: 0.5rem;
+      color: #999;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .summary {
+      margin-top: 2rem;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+    }
+
+    .summary h3 {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="detail-container">
+    <img src="원피스.jpg" class="detail-img" alt="원피스 포스터">
+    <div class="detail-content">
+      <h2>원피스</h2>
+      <p><span class="highlight">원피스에 대한 모든 에피소드를 확인해보세요!</span> 원피스의 에피소드뿐만이 아닌, 줄거리, 감독 등 다양한 정보를 확인하실 수 있습니다.</p>
+
+      <ul>
+        <li><strong>상태:</strong> 방영중</li>
+        <li><strong>제작사:</strong> 에이벡스, 스튜디오 거츠, 매직 버스, DK, 푸지 TV</li>
+        <li><strong>원작:</strong> 정보 없음</li>
+        <li><strong>시즌:</strong> 1999년 4분기</li>
+        <li><strong>유형:</strong> TV</li>
+        <li><strong>에피소드:</strong> 1133.5화</li>
+        <li><strong>등급:</strong> 12세 이상</li>
+        <li><strong>방영 시작일:</strong> 1999-10-20</li>
+        <li><strong>최근 방영일:</strong> 2025-06-22</li>
+      </ul>
+
+      <div class="genre-buttons">
+        <button>액션</button><button>모험</button><button>코미디</button><button>드라마</button><button>판타지</button>
+      </div>
+
+      <div class="tag-buttons">
+        <button>무해성</button><button>연기</button><button>입양</button><button>시대착오성</button><button>천사</button>
+        <button>동물</button><button>감탄</button><button>안티 히어로</button><button>인공지능</button>
+      </div>
+
+      <div class="more-button">더보기</div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h3>줄거리</h3>
+    <p>
+      부-명-성-힘… 한때 이 세상의 모든 것을 손에 넣은 사나이. "해적왕 골드 로저". 그가 죽음을 앞두고 남긴 한마디는… 전세계 사람들을 바다로 향하게 만들었다. "내 보물 말인가? 원한다면 주도록 하지. 잘 찾아봐. 이 세상의 모든 것을 거기에 두고 왔으니까!" 세상은 대해적 시대를 맞는다.
+    </p>
+  </div>
+
+</body>
+</html>

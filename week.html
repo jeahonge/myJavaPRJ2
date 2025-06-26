@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniPlay 요일별 애니</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fefefe; color: #222; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #f9faff;
+    }
+
+    header h1 { font-size: 1.5rem; color: #2d2d80; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav .auth-links {
+      margin-left: auto;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      background: #0072ea;
+      color: white;
+      padding: 1rem 1.5rem;
+    }
+
+    .anime-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .day-block {
+      width: 100%;
+    }
+
+    .day-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #2d2d80;
+      font-weight: bold;
+    }
+
+    .anime-card {
+      flex: 0 0 auto;
+      width: 120px;
+      position: relative;
+    }
+
+    .anime-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: red;
+      color: white;
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .badge.tv {
+      top: 8px;
+      right: 8px;
+      left: auto;
+      background: #007bff;
+    }
+
+    .episode-count {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      color: white;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AniPlay</h1>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="day-of-the-week.html" class="active">요일별 애니</a>
+        <a href="#">분기별 애니</a>
+        <a href="top20.html">TOP 20</a>
+        <a href="#">분류</a>
+        <a href="#">공지사항</a>
+      </div>
+      <div class="auth-links">
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-title">요일별 애니메이션</div>
+
+  <section class="anime-list">
+    <div class="day-block">
+      <div class="day-title">월요일</div>
+      <a href="detail.html" class="anime-card">
+        <div style="position: relative;">
+          <img src="원피스.jpg" alt="원피스">
+          <span class="badge">완결</span>
+          <span class="badge tv">TV</span>
+          <div class="episode-count">1133.5화</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="day-block">
+      <div class="day-title">화요일</div>
+      <div class="anime-card">
+        <div style="position: relative;">
+          <img src="나루토.jpg" alt="나루토">
+          <span class="badge">완결</span>
+          <span class="badge tv">TV</span>
+          <div class="episode-count">720화</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-title">수요일</div>
+      <div class="anime-card">
+        <div style="position: relative;">
+          <img src="진격의 거인.jpg" alt="진격의 거인">
+          <span class="badge">완결</span>
+          <span class="badge tv">TV</span>
+          <div class="episode-count">25화</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-title">목요일</div>
+      <div class="anime-card">
+        <div style="position: relative;">
+          <img src="소드아트온라인.jpg" alt="소드 아트 온라인">
+          <span class="badge">완결</span>
+          <span class="badge tv">TV</span>
+          <div class="episode-count">12화</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-title">금요일</div>
+      <div class="anime-card">
+        <div style="position: relative;">
+          <img src="던만추.jpg" alt="던만추">
+          <span class="badge tv">TV</span>
+          <div class="episode-count">12화</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
